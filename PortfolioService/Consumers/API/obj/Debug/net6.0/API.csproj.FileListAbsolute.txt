@@ -30,3 +30,4 @@ C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumer
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumers\API\obj\Debug\net6.0\API.pdb
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumers\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumers\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumers\API\obj\Debug\net6.0\API.sourcelink.json
