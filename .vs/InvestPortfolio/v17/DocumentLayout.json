@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\user\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\user\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\user\\ports\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\user\\ports\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\portfolio\\entities\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\portfolio\\entities\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\active\\entities\\active.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\active\\entities\\active.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\transaction\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\transaction\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18F97A14-7B3E-48C4-8EA5-532E5CCEA9A1}|PortfolioService\\Adpters\\Data\\Data.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\adpters\\data\\migrations\\20240609194903_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18F97A14-7B3E-48C4-8EA5-532E5CCEA9A1}|PortfolioService\\Adpters\\Data\\Data.csproj|solutionrelative:portfolioservice\\adpters\\data\\migrations\\20240609194903_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:37:35.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Active.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Active\\Entities\\Active.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\Active\\Entities\\Active.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Active\\Entities\\Active.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Domain\\Active\\Entities\\Active.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:34:31.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Portfolio.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Portfolio\\Entities\\Portfolio.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\Portfolio\\Entities\\Portfolio.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Portfolio\\Entities\\Portfolio.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Domain\\Portfolio\\Entities\\Portfolio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:32:18.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:23:12.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\User\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Entities\\User.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Domain\\User\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "Title": "20240609194903_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\Migrations\\20240609194903_InitialCreate.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Adpters\\Data\\Migrations\\20240609194903_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\Migrations\\20240609194903_InitialCreate.cs",
+              "RelativeToolTip": "PortfolioService\\Adpters\\Data\\Migrations\\20240609194903_InitialCreate.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:24:15.566Z",
+              "WhenOpened": "2024-06-09T19:51:11.348Z",
               "EditorCaption": ""
             }
           ]

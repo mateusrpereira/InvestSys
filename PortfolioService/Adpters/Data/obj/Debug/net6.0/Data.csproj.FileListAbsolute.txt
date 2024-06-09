@@ -10,3 +10,9 @@ C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\refint\Data.dll
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.pdb
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\ref\Data.dll
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\bin\Debug\net6.0\Domain.dll
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\bin\Debug\net6.0\Domain.pdb
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.Up2Date
+C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache

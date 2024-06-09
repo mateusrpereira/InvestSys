@@ -1,13 +1,19 @@
-﻿namespace Domain.Entities
+﻿using Domain.Transaction.Enums;
+
+namespace Domain.Entities
 {
     public class Transaction
     {
+        public Transaction()
+        {
+            Date = DateTime.UtcNow;
+        }
         public int Id { get; set; }
-        public Portfolio PortfolioId { get; set; }
-        public Active ActiveId { get; set; }
-        public string TransactionType { get; set; }//Verificar
+        public Portfolio Portfolio { get; set; }
+        public Active Active { get; set; }
+        public TransactionTypes TransactionType { get; set; }//Enum
         public int Quantity { get; set; }
         public double Price { get; set; }
-        public DateTime Date { get; set; }//Definir Data Atual
+        public DateTime Date { get; set; }//Ctor
     }
 }

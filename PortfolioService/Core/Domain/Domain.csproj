@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Active\Enums\" />
     <Folder Include="Active\Exceptions\" />
     <Folder Include="Active\Ports\" />
     <Folder Include="Active\ValueObjects\" />
@@ -15,7 +14,6 @@
     <Folder Include="Portfolio\Exceptions\" />
     <Folder Include="Portfolio\Ports\" />
     <Folder Include="Portfolio\ValueObjects\" />
-    <Folder Include="Transaction\Enums\" />
     <Folder Include="Transaction\Exceptions\" />
     <Folder Include="Transaction\Ports\" />
     <Folder Include="Transaction\ValueObjects\" />
