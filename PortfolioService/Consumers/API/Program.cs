@@ -1,7 +1,11 @@
+using Application.Active;
+using Application.Active.Ports;
 using Application.User;
 using Application.User.Ports;
 using Data;
+using Data.Active;
 using Data.User;
+using Domain.Active.Ports;
 using Domain.Ports;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +18,9 @@ builder.Services.AddControllers();
 # region IoC
 builder.Services.AddScoped<IUserManager, UserManager>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddScoped<IActiveManager, ActiveManager>();
+builder.Services.AddScoped<IActiveRepository, ActiveRepository>();
 #endregion
 
 #region DB wiring up

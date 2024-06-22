@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Active\" />
     <Folder Include="Transaction\" />
     <Folder Include="Portfolio\" />
   </ItemGroup>
