@@ -858,6 +858,19 @@
           }
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2416,6 +2429,11 @@
         "version.txt"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Application/Application.csproj",
+      "msbuildProject": "../../Core/Application/Application.csproj"
+    },
     "Data/1.0.0": {
       "type": "project",
       "path": "../../Adpters/Data/Data.csproj",
@@ -2429,6 +2447,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Application >= 1.0.0",
       "Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.31",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2463,6 +2482,9 @@
           "projectReferences": {
             "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\Data.csproj"
+            },
+            "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Application.csproj"
             }
           }
         }

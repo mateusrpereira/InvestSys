@@ -1,4 +1,8 @@
+using Application.User;
+using Application.User.Ports;
 using Data;
+using Data.User;
+using Domain.Ports;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+# region IoC
+builder.Services.AddScoped<IUserManager, UserManager>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+#endregion
 
 #region DB wiring up
 var connectionString = builder.Configuration.GetConnectionString("Main");
