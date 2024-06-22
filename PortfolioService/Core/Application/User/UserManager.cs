@@ -33,9 +33,30 @@ namespace Application.User
                 {
                     Success = false,
                     ErrorCode = ErrorCodes.COULD_NOT_STORE_DATA,
-                    Message = "There was an error when savinf to DB"
+                    Message = "There was an error when saving to DB"
                 };
             }
+        }
+
+        public async Task<UserResponse> GetUser(int userId)
+        {
+            var user = await _userRepository.Get(userId);
+
+            if (user == null)
+            {
+                return new UserResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.USER_NOT_FOUND,
+                    Message = "No User record was found with the given Id"
+                };
+            }
+
+            return new UserResponse
+            {
+                Data = UserDto.MapToDto(user),
+                Success = true,
+            };
         }
     }
 }

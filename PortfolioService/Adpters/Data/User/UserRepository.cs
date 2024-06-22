@@ -1,4 +1,5 @@
 ﻿using Domain.Ports;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.User
 {
@@ -17,7 +18,7 @@ namespace Data.User
         }
         public Task<Domain.Entities.User> Get(int Id)
         {
-            throw new NotImplementedException();
+            return _portfolioDbContext.User.Where(u => u.Id == Id).FirstOrDefaultAsync();
         }
     }
 }

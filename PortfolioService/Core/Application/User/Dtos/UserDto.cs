@@ -18,5 +18,15 @@ namespace Application.User.Dtos
                 Password = userDto.Password,
             };
         }
+        public static UserDto MapToDto(Entities.User user) 
+        {
+            return new UserDto 
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Password = user.Password,
+            };
+        }
     }
 }
