@@ -2,15 +2,19 @@ using Application.Active;
 using Application.Active.Ports;
 using Application.Portfolio;
 using Application.Portfolio.Ports;
+using Application.Transaction;
+using Application.Transaction.Ports;
 using Application.User;
 using Application.User.Ports;
 using Data;
 using Data.Active;
 using Data.Portfolio;
+using Data.Transaction;
 using Data.User;
 using Domain.Active.Ports;
 using Domain.Portfolio.Ports;
 using Domain.Ports;
+using Domain.Transaction.Ports;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +32,9 @@ builder.Services.AddScoped<IActiveRepository, ActiveRepository>();
 
 builder.Services.AddScoped<IPortfolioManager, PortfolioManager>();
 builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+
+builder.Services.AddScoped<ITransactionManager, TransactionManager>();
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 #endregion
 
 #region DB wiring up
