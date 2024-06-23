@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Transaction\" />
-    <Folder Include="Portfolio\" />
   </ItemGroup>
 
   <ItemGroup>

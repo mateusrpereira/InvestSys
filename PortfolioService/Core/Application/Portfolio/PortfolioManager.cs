@@ -1,0 +1,68 @@
+﻿using Application.Portfolio.Dtos;
+using Application.Portfolio.Ports;
+using Application.Portfolio.Requests;
+using Application.Portfolio.Responses;
+using Domain.Portfolio.Ports;
+using Domain.Ports;
+
+namespace Application.Portfolio
+{
+    public class PortfolioManager : IPortfolioManager
+    {
+        private IPortfolioRepository _portfolioRepository;
+        private IUserRepository _userRepository;//User existe em Portfolio
+        public PortfolioManager(
+            IPortfolioRepository portfolioRepository, 
+            IUserRepository userRepository)
+        {
+            _portfolioRepository = portfolioRepository;
+            _userRepository = userRepository;
+        }
+
+        public async Task<PortfolioResponse> CreatePortfolio(CreatePortfolioRequest request)
+        {
+            try
+            {
+                var portfolio = PortfolioDto.MapToEntity(request.Data);
+                portfolio.User = await _userRepository.Get(request.Data.UserId);//Recuperar UserId
+
+                request.Data.Id = await _portfolioRepository.Create(portfolio);
+
+                return new PortfolioResponse
+                {
+                    Data = request.Data,
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new PortfolioResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.COULD_NOT_STORE_DATA,
+                    Message = "There was an error when saving to DB"
+                };
+            }
+        }
+        public async Task<PortfolioResponse> GetPortfolio(int portfolioId)
+        {
+            var portfolio = await _portfolioRepository.Get(portfolioId);
+
+            if (portfolio == null) 
+            {
+                return new PortfolioResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_NOT_FOUND,
+                    Message = "No Portfolio record was found with the given Id"
+                };
+            }
+
+            return new PortfolioResponse
+            {
+                Data = PortfolioDto.MapToDto(portfolio),
+                Success = true,
+            };
+        }
+    }
+}

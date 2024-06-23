@@ -47,7 +47,7 @@ namespace Application.Active
                 return new ActiveResponse 
                 {
                     Success = false,
-                    ErrorCode = ErrorCodes.USER_NOT_FOUND,
+                    ErrorCode = ErrorCodes.ACTIVE_NOT_FOUND,
                     Message = "No Active record was found with the given Id"
                 };
                 

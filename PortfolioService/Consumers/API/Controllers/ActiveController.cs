@@ -10,10 +10,10 @@ namespace API.Controllers
     [Route("[controller]")]
     public class ActiveController : ControllerBase
     {
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<ActiveController> _logger;
         private readonly IActiveManager _activeManager;
 
-        public ActiveController(ILogger<UserController> logger, IActiveManager activeManager)
+        public ActiveController(ILogger<ActiveController> logger, IActiveManager activeManager)
         {
             _logger = logger;
             _activeManager = activeManager;

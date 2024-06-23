@@ -1,11 +1,15 @@
 using Application.Active;
 using Application.Active.Ports;
+using Application.Portfolio;
+using Application.Portfolio.Ports;
 using Application.User;
 using Application.User.Ports;
 using Data;
 using Data.Active;
+using Data.Portfolio;
 using Data.User;
 using Domain.Active.Ports;
+using Domain.Portfolio.Ports;
 using Domain.Ports;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,6 +25,9 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddScoped<IActiveManager, ActiveManager>();
 builder.Services.AddScoped<IActiveRepository, ActiveRepository>();
+
+builder.Services.AddScoped<IPortfolioManager, PortfolioManager>();
+builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 #endregion
 
 #region DB wiring up
