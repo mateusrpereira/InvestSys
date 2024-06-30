@@ -19,7 +19,9 @@ namespace Application.User
             {
                 var user = UserDto.MapToEntity(request.Data);
 
-                request.Data.Id = await _userRepository.Create(user);
+                //request.Data.Id = await _userRepository.Create(user);
+                await user.Save(_userRepository);
+                request.Data.Id = user.Id;
 
                 return new UserResponse
                 {
@@ -57,6 +59,52 @@ namespace Application.User
                 Data = UserDto.MapToDto(user),
                 Success = true,
             };
+        }
+        public async Task<UserResponse> UpdateUser(UpdateUserRequest request)
+        {
+            try
+            {
+                var user = UserDto.MapToEntity(request.Data);
+
+                await user.Save(_userRepository);
+                request.Data.Id = user.Id;
+                
+                return new UserResponse
+                {
+                    Data = request.Data,
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new UserResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.USER_UPDATE_FAILED,
+                    Message = "There was an error when updating to DB"
+                };
+            }
+        }
+        public async Task<UserResponse> DeleteUser(int userId)
+        {
+            try
+            {
+                await _userRepository.Delete(userId);
+
+                return new UserResponse 
+                {
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new UserResponse()
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.USER_DELETE_FAILED,
+                    Message = "There was an error when deleting to DB"
+                };
+            }
         }
     }
 }

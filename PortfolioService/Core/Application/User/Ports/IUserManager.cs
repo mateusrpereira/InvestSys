@@ -7,6 +7,7 @@ namespace Application.User.Ports
     {
         Task<UserResponse> CreateUser(CreateUserRequest request);
         Task<UserResponse> GetUser(int userId);
-
+        Task<UserResponse> UpdateUser(UpdateUserRequest request);
+        Task<UserResponse> DeleteUser(int userId);
     }
 }

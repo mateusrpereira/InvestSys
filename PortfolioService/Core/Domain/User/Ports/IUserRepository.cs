@@ -6,5 +6,7 @@ namespace Domain.Ports
     {
         Task<int> Create(User user);
         Task<User> Get(int Id);
+        Task<int> Update(User user);
+        Task Delete(int Id);
     }
 }

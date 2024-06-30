@@ -9,6 +9,8 @@
         MISSING_REQUIRED_INFORMATION = 4,
         INVALID_EMAIL = 5,
         USER_NOT_FOUND = 6,
+        USER_UPDATE_FAILED = 7,
+        USER_DELETE_FAILED = 8,
 
         // Portfolio related codes 100 199
         PORTFOLIO_NOT_FOUND = 100,

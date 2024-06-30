@@ -49,5 +49,35 @@ namespace API.Controllers
             
             return NotFound(res);
         }
+
+        [HttpPut]
+        public async Task<ActionResult<UserDto>> Put(UserDto user)
+        {
+            var request = new UpdateUserRequest
+            {
+                Data = user
+            };
+
+            var res = await _userManager.UpdateUser(request);
+
+            if (res.ErrorCode == ErrorCodes.COULD_NOT_STORE_DATA) return BadRequest(res);
+
+            if (res.ErrorCode == ErrorCodes.COULD_NOT_STORE_DATA) return BadRequest(res);
+
+            if (res.Success) return Ok(res.Data);
+
+            _logger.LogError("Response with unknown ErrorCode Returned", res);
+            return BadRequest(500);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<UserDto>> Delete(int userId)
+        {
+            var res = await _userManager.DeleteUser(userId);
+
+            if(res.Success) return Ok(res.Data);//verificar se é necessário o res.Data
+
+            return NotFound(res);
+        }
     }
 }
