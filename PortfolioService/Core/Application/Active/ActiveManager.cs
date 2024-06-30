@@ -19,7 +19,9 @@ namespace Application.Active
             {
                 var active = ActiveDto.MapToEntity(request.Data);
 
-                request.Data.Id = await _activeRepository.Create(active);
+                //request.Data.Id = await _activeRepository.Create(active);
+                await active.Save(_activeRepository);
+                request.Data.Id = active.Id;
 
                 return new ActiveResponse
                 {
@@ -37,7 +39,6 @@ namespace Application.Active
                 };
             }
         }
-
         public async Task<ActiveResponse> GetActive(int activeId)
         {
             var active = await _activeRepository.Get(activeId);
@@ -58,6 +59,52 @@ namespace Application.Active
                 Data = ActiveDto.MapToDto(active),
                 Success = true,
             };
+        }
+        public async Task<ActiveResponse> UpdateActive(UpdateActiveRequest request)
+        {
+            try
+            {
+                var active = ActiveDto.MapToEntity(request.Data);
+
+                await active.Save(_activeRepository);
+                request.Data.Id = active.Id;
+
+                return new ActiveResponse
+                {
+                    Data = request.Data,
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new ActiveResponse 
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.ACTIVE_UPDATE_FAILED,
+                    Message = "There was an error when updating to DB"
+                };
+            }
+        }
+        public async Task<ActiveResponse> DeleteActive(int activeId)
+        {
+            try
+            {
+                await _activeRepository.Delete(activeId);
+
+                return new ActiveResponse
+                {
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new ActiveResponse()
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.ACTIVE_DELETE_FAILED,
+                    Message = "There was an error when deleting to DB"
+                };
+            }
         }
     }
 }

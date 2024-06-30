@@ -25,6 +25,8 @@
         ACTIVE_INVALID_PERSON_ID = 202,
         ACTIVE_MISSING_REQUIRED_INFORMATION = 203,
         ACTIVE_INVALID_EMAIL = 204,
+        ACTIVE_UPDATE_FAILED = 7,
+        ACTIVE_DELETE_FAILED = 8,
 
         /* 
          // Booking related codes 200 499

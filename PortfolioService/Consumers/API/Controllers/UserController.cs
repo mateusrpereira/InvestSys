@@ -60,7 +60,7 @@ namespace API.Controllers
 
             var res = await _userManager.UpdateUser(request);
 
-            if (res.ErrorCode == ErrorCodes.COULD_NOT_STORE_DATA) return BadRequest(res);
+            if (res.ErrorCode == ErrorCodes.MISSING_REQUIRED_INFORMATION) return BadRequest(res);
 
             if (res.ErrorCode == ErrorCodes.COULD_NOT_STORE_DATA) return BadRequest(res);
 
@@ -75,7 +75,7 @@ namespace API.Controllers
         {
             var res = await _userManager.DeleteUser(userId);
 
-            if(res.Success) return Ok(res.Data);//verificar se é necessário o res.Data
+            if(res.Success) return Ok(res.Data);
 
             return NotFound(res);
         }

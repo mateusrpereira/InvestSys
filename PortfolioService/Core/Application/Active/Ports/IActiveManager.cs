@@ -7,5 +7,7 @@ namespace Application.Active.Ports
     {
         Task<ActiveResponse> CreateActive(CreateActiveRequest request);
         Task<ActiveResponse> GetActive(int activeId);
+        Task<ActiveResponse> UpdateActive(UpdateActiveRequest request);
+        Task<ActiveResponse> DeleteActive(int activeId);
     }
 }

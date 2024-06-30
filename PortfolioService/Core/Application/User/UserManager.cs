@@ -39,7 +39,6 @@ namespace Application.User
                 };
             }
         }
-
         public async Task<UserResponse> GetUser(int userId)
         {
             var user = await _userRepository.Get(userId);

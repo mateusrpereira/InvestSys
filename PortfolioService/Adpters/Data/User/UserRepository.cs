@@ -28,7 +28,7 @@ namespace Data.User
         }
         public async Task Delete(int Id)
         {
-            var userId = await Get(Id);//verificar melhor forma dos exemplos
+            var userId = await Get(Id);
             _portfolioDbContext.User.Remove(userId);
             await _portfolioDbContext.SaveChangesAsync();
         }

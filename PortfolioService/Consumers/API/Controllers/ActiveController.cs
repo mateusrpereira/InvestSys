@@ -49,5 +49,34 @@ namespace API.Controllers
 
             return NotFound(res);
         }
+
+        [HttpPut]
+        public async Task<ActionResult<ActiveDto>> Put(ActiveDto active)
+        {
+            var request = new UpdateActiveRequest
+            {
+                Data = active
+            };
+
+            var res = await _activeManager.UpdateActive(request);
+
+            if (res.ErrorCode == ErrorCodes.MISSING_REQUIRED_INFORMATION) return BadRequest(res);
+
+            if (res.ErrorCode == ErrorCodes.COULD_NOT_STORE_DATA) return BadRequest(res);
+
+            if (res.Success) return Ok(res.Data);
+
+            _logger.LogError("Response with unknown ErrorCode Returned", res);
+            return BadRequest(500);
+        }
+        [HttpDelete]
+        public async Task<ActionResult<ActiveDto>> Delete(int activeId)
+        {
+            var res = await _activeManager.DeleteActive(activeId);
+            
+            if (res.Success) return Ok(res.Data);
+
+            return NotFound(res);
+        }
     }
 }
