@@ -1,4 +1,5 @@
 ﻿using Domain.Transaction.Enums;
+using Domain.Transaction.Ports;
 
 namespace Domain.Entities
 {
@@ -15,5 +16,17 @@ namespace Domain.Entities
         public int Quantity { get; set; }
         public double Price { get; set; }
         public DateTime Date { get; set; }//Ctor
+
+        public async Task Save(ITransactionRepository transactionRepository)
+        {
+            if(Id == 0)
+            {
+                Id = await transactionRepository.Create(this);
+            }
+            else
+            {
+                await transactionRepository.Update(this);
+            }
+        }
     }
 }

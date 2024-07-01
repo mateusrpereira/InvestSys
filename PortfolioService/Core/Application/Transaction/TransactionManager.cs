@@ -32,7 +32,9 @@ namespace Application.Transaction
                 transaction.Portfolio = await _portfolioRepository.Get(request.Data.PortfolioId);
                 transaction.Active = await _activeRepository.Get(request.Data.ActiveId);
 
-                request.Data.Id = await _transactionRepository.Create(transaction);
+                //request.Data.Id = await _transactionRepository.Create(transaction);
+                await transaction.Save(_transactionRepository);
+                request.Data.Id = transaction.Id;
 
                 return new TransactionResponse
                 {
@@ -60,7 +62,7 @@ namespace Application.Transaction
                 return new TransactionResponse
                 {
                     Success = false,
-                    ErrorCode = ErrorCodes.PORTFOLIO_NOT_FOUND,
+                    ErrorCode = ErrorCodes.TRANSACTION_NOT_FOUND,
                     Message = "No Transaction record was found with the given Id"
                 };
             }
@@ -70,6 +72,56 @@ namespace Application.Transaction
                 Data = TransactionDto.MapToDto(transaction),
                 Success = true,
             };
+        }
+
+        public async Task<TransactionResponse> UpdateTransaction(UpdateTransactionRequest request)
+        {
+            try
+            {
+                var transaction = TransactionDto.MapToEntity(request.Data);
+                transaction.Portfolio = await _portfolioRepository.Get(request.Data.PortfolioId);//Recupera Portfolio
+                transaction.Active = await _activeRepository.Get(request.Data.ActiveId);//Recupera Active
+
+                await transaction.Save(_transactionRepository);
+                request.Data.Id = transaction.Id;
+
+                return new TransactionResponse
+                {
+                    Data = request.Data,
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new TransactionResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_UPDATE_FAILED,
+                    Message = "There was an error when updating to DB"
+                };
+            }
+        }
+
+        public async Task<TransactionResponse> DeleteTransaction(int transactionId)
+        {
+            try
+            {
+                await _transactionRepository.Delete(transactionId);
+
+                return new TransactionResponse
+                {
+                    Success = true
+                };
+            }
+            catch (Exception)
+            {
+                return new TransactionResponse()
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_DELETE_FAILED,
+                    Message = "There was an error when deleting to DB"
+                };
+            }
         }
     }
 }

@@ -39,12 +39,43 @@ namespace API.Controllers
             _logger.LogError("Response with unknown ErrorCode Returned", res);
             return BadRequest(500);
         }
+
         [HttpGet]
         public async Task<ActionResult<TransactionDto>> Get(int transactionId)
         {
             var res = await _transactionManager.GetTransaction(transactionId);
 
             if (res.Success) return Created("", res.Data);//Alterar para Ok
+
+            return NotFound(res);
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<TransactionDto>> Put(TransactionDto transaction)
+        {
+            var request = new UpdateTransactionRequest
+            {
+                Data = transaction
+            };
+
+            var res = await _transactionManager.UpdateTransaction(request);
+
+            if (res.ErrorCode == ErrorCodes.MISSING_REQUIRED_INFORMATION) return BadRequest(res);
+
+            if (res.ErrorCode == ErrorCodes.COULD_NOT_STORE_DATA) return BadRequest(res);
+
+            if (res.Success) return Ok(res.Data);
+
+            _logger.LogError("Response with unknown ErrorCode Returned", res);
+            return BadRequest(500);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<TransactionDto>> Delete(int transactionId)
+        {
+            var res = await _transactionManager.DeleteTransaction(transactionId);
+
+            if (res.Success) return Ok(res.Data);
 
             return NotFound(res);
         }

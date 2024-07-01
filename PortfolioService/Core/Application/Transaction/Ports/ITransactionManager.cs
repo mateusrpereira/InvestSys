@@ -7,5 +7,7 @@ namespace Application.Transaction.Ports
     {
         Task<TransactionResponse> CreateTransaction(CreateTransactionRequest request);
         Task<TransactionResponse> GetTransaction(int transactionId);
+        Task<TransactionResponse> UpdateTransaction(UpdateTransactionRequest request);
+        Task<TransactionResponse> DeleteTransaction(int transactionId);
     }
 }
