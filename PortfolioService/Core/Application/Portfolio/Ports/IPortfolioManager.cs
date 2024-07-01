@@ -7,5 +7,7 @@ namespace Application.Portfolio.Ports
     {
         Task<PortfolioResponse> CreatePortfolio(CreatePortfolioRequest request);
         Task<PortfolioResponse> GetPortfolio(int  portfolioId);
+        Task<PortfolioResponse> UpdatePortfolio(UpdatePortfolioRequest request);
+        Task<PortfolioResponse> DeletePortfolio(int portfolioId);
     }
 }

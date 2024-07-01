@@ -24,9 +24,12 @@ namespace Application.Portfolio
             try
             {
                 var portfolio = PortfolioDto.MapToEntity(request.Data);
-                portfolio.User = await _userRepository.Get(request.Data.UserId);//Recuperar UserId
 
-                request.Data.Id = await _portfolioRepository.Create(portfolio);
+                portfolio.User = await _userRepository.Get(request.Data.UserId);//Recuperar User
+
+                //request.Data.Id = await _portfolioRepository.Create(portfolio);
+                await portfolio.Save(_portfolioRepository);
+                request.Data.Id = portfolio.Id;
 
                 return new PortfolioResponse
                 {
@@ -44,6 +47,7 @@ namespace Application.Portfolio
                 };
             }
         }
+
         public async Task<PortfolioResponse> GetPortfolio(int portfolioId)
         {
             var portfolio = await _portfolioRepository.Get(portfolioId);
@@ -63,6 +67,56 @@ namespace Application.Portfolio
                 Data = PortfolioDto.MapToDto(portfolio),
                 Success = true,
             };
+        }
+
+        public async Task<PortfolioResponse> UpdatePortfolio(UpdatePortfolioRequest request)
+        {
+            try
+            {
+                var portfolio = PortfolioDto.MapToEntity(request.Data);
+
+                portfolio.User = await _userRepository.Get(request.Data.UserId);//Recuperar UserId
+
+                await portfolio.Save(_portfolioRepository);
+                request.Data.Id = portfolio.Id;
+
+                return new PortfolioResponse
+                {
+                    Data = request.Data,
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new PortfolioResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_UPDATE_FAILED,
+                    Message = "There was an error when updating to DB"
+                };
+            }
+        }
+
+        public async Task<PortfolioResponse> DeletePortfolio(int portfolioId)
+        {
+            try
+            {
+                await _portfolioRepository.Delete(portfolioId);
+
+                return new PortfolioResponse
+                {
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new PortfolioResponse()
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_DELETE_FAILED,
+                    Message = "There was an error when deleting to DB"
+                };
+            }
         }
     }
 }

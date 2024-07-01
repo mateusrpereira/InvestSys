@@ -16,7 +16,7 @@ namespace Application.Portfolio.Dtos
             return new Entities.Portfolio
             {
                 Id = portfolioDto.Id,
-                User = new Entities.User { Id = portfolioDto.UserId },//bo aqui
+                User = new Entities.User { Id = portfolioDto.UserId },
                 Name = portfolioDto.Name,
                 Description = portfolioDto.Description
             };
