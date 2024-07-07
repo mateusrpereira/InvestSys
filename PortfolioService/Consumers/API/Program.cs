@@ -27,6 +27,8 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IUserManager, UserManager>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
+builder.Services.AddScoped<ILoginManager, LoginManager>();
+
 builder.Services.AddScoped<IActiveManager, ActiveManager>();
 builder.Services.AddScoped<IActiveRepository, ActiveRepository>();
 

@@ -32,5 +32,9 @@ namespace Data.User
             _portfolioDbContext.User.Remove(userId);
             await _portfolioDbContext.SaveChangesAsync();
         }
+        public async Task<Domain.Entities.User> FindByLogin(string email)
+        {
+            return await _portfolioDbContext.User.FirstOrDefaultAsync(u => u.Email.Equals(email));
+        }
     }
 }

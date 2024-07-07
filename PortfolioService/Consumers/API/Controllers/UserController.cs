@@ -41,9 +41,9 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<UserDto>> Get(int guestId)
+        public async Task<ActionResult<UserDto>> Get(int userId)
         {
-            var res = await _userManager.GetUser(guestId);
+            var res = await _userManager.GetUser(userId);
             
             if (res.Success) return Created("", res.Data);
             

@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\ports\\iloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\ports\\iloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\user\\ports\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\user\\ports\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18F97A14-7B3E-48C4-8EA5-532E5CCEA9A1}|PortfolioService\\Adpters\\Data\\Data.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\adpters\\data\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18F97A14-7B3E-48C4-8EA5-532E5CCEA9A1}|PortfolioService\\Adpters\\Data\\Data.csproj|solutionrelative:portfolioservice\\adpters\\data\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +38,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T18:14:47.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginManager.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:21:03.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILoginManager.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:01:01.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\User\\UserRepository.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Adpters\\Data\\User\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\User\\UserRepository.cs",
+              "RelativeToolTip": "PortfolioService\\Adpters\\Data\\User\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:54:04.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:47:46.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:50:25.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\UserManager.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\UserManager.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\UserManager.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\UserManager.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwCsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:59:01.491Z",
+              "EditorCaption": ""
             }
           ]
         }

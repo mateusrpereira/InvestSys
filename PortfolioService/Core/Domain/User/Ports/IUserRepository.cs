@@ -8,5 +8,6 @@ namespace Domain.Ports
         Task<User> Get(int Id);
         Task<int> Update(User user);
         Task Delete(int Id);
+        Task<User> FindByLogin(string email);
     }
 }
