@@ -9,7 +9,7 @@ namespace Application.Active.Dtos
         public int Id { get; set; }
         public ActiveTypes ActiveType { get; set; }
         public string Name { get; set; }
-        public int Code { get; set; }
+        public string Code { get; set; }
 
         public static Entities.Active MapToEntity(ActiveDto activeDto)
         {

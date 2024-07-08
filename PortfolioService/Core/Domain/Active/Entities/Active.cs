@@ -9,7 +9,7 @@ namespace Domain.Entities
         public int Id { get; set; }
         public ActiveTypes ActiveType { get; set; }
         public string Name { get; set; }
-        public int Code { get; set; }
+        public string Code { get; set; }
         public async Task Save(IActiveRepository activeRepository)
         {
             if (Id == 0)
