@@ -992,19 +992,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\AdaptersTests.csproj",
       "projectName": "AdaptersTests",
       "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\AdaptersTests.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\obj\\",
-=======
-      "projectUniqueName": "D:\\InvestSys-main\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\AdaptersTests.csproj",
-      "projectName": "AdaptersTests",
-      "projectPath": "D:\\InvestSys-main\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\AdaptersTests.csproj",
-      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "D:\\InvestSys-main\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\obj\\",
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",

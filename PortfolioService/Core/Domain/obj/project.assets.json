@@ -1,13 +1,6 @@
 {
   "version": 3,
   "targets": {
-<<<<<<< HEAD
-    "net6.0": {}
-  },
-  "libraries": {},
-  "projectFileDependencyGroups": {
-    "net6.0": []
-=======
     "net6.0": {
       "Microsoft.IdentityModel.Abstractions/7.6.2": {
         "type": "package",
@@ -210,7 +203,6 @@
     "net6.0": [
       "System.IdentityModel.Tokens.Jwt >= 7.6.2"
     ]
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
   },
   "packageFolders": {
     "C:\\Users\\mateu\\.nuget\\packages\\": {}
@@ -218,19 +210,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj",
       "projectName": "Domain",
       "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\obj\\",
-=======
-      "projectUniqueName": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj",
-      "projectName": "Domain",
-      "projectPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\obj\\",
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -263,15 +247,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-<<<<<<< HEAD
-=======
         "dependencies": {
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[7.6.2, )"
           }
         },
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         "imports": [
           "net461",
           "net462",

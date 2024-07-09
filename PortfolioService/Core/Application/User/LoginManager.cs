@@ -1,27 +1,18 @@
 ﻿using Application.User.Dtos;
 using Application.User.Ports;
 using Domain.Ports;
-<<<<<<< HEAD
-=======
 using Domain.Security;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 
 namespace Application.User
 {
     public class LoginManager : ILoginManager
     {
         private IUserRepository _userRepository;
-<<<<<<< HEAD
-
-        public LoginManager(IUserRepository userRepository)
-        {
-            _userRepository = userRepository;
-=======
         private SigningConfigurations _signingConfigurations;
         private TokenConfigurations _tokenConfigurations;
         public IConfiguration _configuration { get; }
@@ -35,23 +26,10 @@ namespace Application.User
             _signingConfigurations = signingConfigurations;
             _tokenConfigurations = tokenConfigurations;
             _configuration = configuration;
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         }
 
         public async Task<object> FindByLogin(LoginDto user)
         {
-<<<<<<< HEAD
-
-            if(user != null && !string.IsNullOrWhiteSpace(user.Email))
-            {
-                return await _userRepository.FindByLogin(user.Email);
-            }
-            else
-            {
-                return null;
-            }
-        }
-=======
             var baseUser = new Domain.Entities.User();
             
             if(user != null && !string.IsNullOrWhiteSpace(user.Email))
@@ -123,6 +101,5 @@ namespace Application.User
                 message = "Usuário Logado com sucesso"
             };
         }
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     }
 }

@@ -2,6 +2,7 @@
 using Application.Portfolio.Dtos;
 using Application.Portfolio.Ports;
 using Application.Portfolio.Requests;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -20,6 +21,7 @@ namespace API.Controllers
             _portfolioManager = portfolioManager;
         }
 
+        [Authorize("Bearer")]
         [HttpPost]
         public async Task<ActionResult<PortfolioDto>> Post(PortfolioDto portfolio)
         {
@@ -41,6 +43,7 @@ namespace API.Controllers
             return BadRequest(500);
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult<PortfolioDto>> Get(int portfolioId)
         {
@@ -51,6 +54,7 @@ namespace API.Controllers
             return NotFound(res);
         }
 
+        [Authorize("Bearer")]
         [HttpPut]
         public async Task<ActionResult<PortfolioDto>> Put(PortfolioDto portfolio)
         {
@@ -71,7 +75,8 @@ namespace API.Controllers
 
             return BadRequest(500);
         }
-        
+
+        [Authorize("Bearer")]
         [HttpDelete]
         public async Task<ActionResult<PortfolioDto>> Delete(int portfolioId)
         {

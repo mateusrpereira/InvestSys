@@ -2,6 +2,7 @@
 using Application.Transaction.Dtos;
 using Application.Transaction.Ports;
 using Application.Transaction.Requests;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -20,6 +21,7 @@ namespace API.Controllers
             _transactionManager = transactionManager;
         }
 
+        [Authorize("Bearer")]
         [HttpPost]
         public async Task<ActionResult<TransactionDto>> Post(TransactionDto transaction)
         {
@@ -40,6 +42,7 @@ namespace API.Controllers
             return BadRequest(500);
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult<TransactionDto>> Get(int transactionId)
         {
@@ -50,6 +53,7 @@ namespace API.Controllers
             return NotFound(res);
         }
 
+        [Authorize("Bearer")]
         [HttpPut]
         public async Task<ActionResult<TransactionDto>> Put(TransactionDto transaction)
         {
@@ -70,6 +74,7 @@ namespace API.Controllers
             return BadRequest(500);
         }
 
+        [Authorize("Bearer")]
         [HttpDelete]
         public async Task<ActionResult<TransactionDto>> Delete(int transactionId)
         {

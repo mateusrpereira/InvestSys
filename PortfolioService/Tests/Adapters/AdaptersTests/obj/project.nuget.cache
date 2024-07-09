@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "80Y4N0XKnk0PLYYXWvjI31YJxi8GcH/1skgP7twosd8LspyicQfqOO+m0vn5rp3Kbs3F1b52n0BRLDPg9njNWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\AdaptersTests.csproj",
-=======
-  "dgSpecHash": "97Tb6f9HlCPyevojVG9uthwj2tNENbO+yOORSCMHR93W8irZ6UQm3gDwfNiXg8HSRqlzw7LaB26UUP//5Znx8g==",
-  "success": true,
-  "projectFilePath": "D:\\InvestSys-main\\PortfolioService\\Tests\\Adapters\\AdaptersTests\\AdaptersTests.csproj",
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

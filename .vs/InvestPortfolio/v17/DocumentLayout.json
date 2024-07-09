@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\activecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\activecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18F97A14-7B3E-48C4-8EA5-532E5CCEA9A1}|PortfolioService\\Adpters\\Data\\Data.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\adpters\\data\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18F97A14-7B3E-48C4-8EA5-532E5CCEA9A1}|PortfolioService\\Adpters\\Data\\Data.csproj|solutionrelative:portfolioservice\\adpters\\data\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PortfolioService\\Core\\Application\\User\\LoginManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\ports\\iloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\ports\\iloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\user\\ports\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\user\\ports\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\UserManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PortfolioService\\Core\\Application\\User\\UserManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\user\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\user\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,39 +54,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActiveController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\ActiveController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\ActiveController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\ActiveController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\ActiveController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAADwv0wAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T23:25:02.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\PortfolioController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAkwE4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T23:24:42.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwEwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T23:24:22.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T23:24:06.369Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T22:46:50.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginManager.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\LoginManager.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs",
-              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\LoginManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T22:46:50.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ILoginManager.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs",
               "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\Ports\\ILoginManager.cs",
@@ -83,6 +127,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T22:46:50.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginManager.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\LoginManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T22:46:50.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Adpters\\Data\\User\\UserRepository.cs",
               "RelativeDocumentMoniker": "PortfolioService\\Adpters\\Data\\User\\UserRepository.cs",
@@ -94,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
               "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\User\\Ports\\IUserRepository.cs",
@@ -106,20 +175,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\User\\Dtos\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T22:46:50.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T22:46:50.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\User\\UserManager.cs",
               "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\User\\UserManager.cs",

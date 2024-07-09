@@ -14,10 +14,6 @@ using Data.User;
 using Domain.Active.Ports;
 using Domain.Portfolio.Ports;
 using Domain.Ports;
-<<<<<<< HEAD
-using Domain.Transaction.Ports;
-using Microsoft.EntityFrameworkCore;
-=======
 using Domain.Security;
 using Domain.Transaction.Ports;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -25,14 +21,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-<<<<<<< HEAD
-=======
 var signingConfigurations = new SigningConfigurations();
 builder.Services.AddSingleton(signingConfigurations);
 
@@ -65,7 +58,6 @@ builder.Services.AddAuthorization(auth =>
                    .RequireAuthenticatedUser().Build());
 });
 
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 builder.Services.AddControllers();
 
 # region IoC
@@ -92,9 +84,6 @@ builder.Services.AddDbContext<PortfolioDbContext>(
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-<<<<<<< HEAD
-builder.Services.AddSwaggerGen();
-=======
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -116,7 +105,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 
 var app = builder.Build();
 

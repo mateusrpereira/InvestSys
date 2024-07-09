@@ -2,10 +2,7 @@
 using Application.User.Dtos;
 using Application.User.Ports;
 using Application.User.Requests;
-<<<<<<< HEAD
-=======
 using Microsoft.AspNetCore.Authorization;
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -23,10 +20,6 @@ namespace API.Controllers
             _userManager = userManager;
         }
 
-<<<<<<< HEAD
-=======
-        [Authorize("Bearer")]
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         [HttpPost]
         public async Task<ActionResult<UserDto>> Post(UserDto user)
         {
@@ -48,10 +41,7 @@ namespace API.Controllers
             return BadRequest(500);
         }
 
-<<<<<<< HEAD
-=======
         [Authorize("Bearer")]
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         [HttpGet]
         public async Task<ActionResult<UserDto>> Get(int userId)
         {
@@ -62,10 +52,7 @@ namespace API.Controllers
             return NotFound(res);
         }
 
-<<<<<<< HEAD
-=======
         [Authorize("Bearer")]
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         [HttpPut]
         public async Task<ActionResult<UserDto>> Put(UserDto user)
         {
@@ -86,10 +73,7 @@ namespace API.Controllers
             return BadRequest(500);
         }
 
-<<<<<<< HEAD
-=======
         [Authorize("Bearer")]
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         [HttpDelete]
         public async Task<ActionResult<UserDto>> Delete(int userId)
         {

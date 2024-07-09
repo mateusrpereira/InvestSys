@@ -7,11 +7,6 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Domain/1.0.0": {
-<<<<<<< HEAD
-        "runtime": {
-          "Domain.dll": {}
-        }
-=======
         "dependencies": {
           "System.IdentityModel.Tokens.Jwt": "7.6.2"
         },
@@ -71,7 +66,6 @@
             "fileVersion": "7.6.2.50619"
           }
         }
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
       }
     }
   },
@@ -80,8 +74,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-<<<<<<< HEAD
-=======
     },
     "Microsoft.IdentityModel.Abstractions/7.6.2": {
       "type": "package",
@@ -117,7 +109,6 @@
       "sha512": "sha512-dyvPIzxohovbECESKj9ep7yShujU5oN9dKYR3ivvoTM7nLANNrBC5jN9ysZfY5Hp/Xs0R1b79IsdHuu6D4xwow==",
       "path": "system.identitymodel.tokens.jwt/7.6.2",
       "hashPath": "system.identitymodel.tokens.jwt.7.6.2.nupkg.sha512"
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     }
   }
 }

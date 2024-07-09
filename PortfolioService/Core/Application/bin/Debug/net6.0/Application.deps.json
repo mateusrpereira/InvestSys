@@ -8,20 +8,13 @@
     ".NETCoreApp,Version=v6.0": {
       "Application/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Domain": "1.0.0"
-=======
           "Domain": "1.0.0",
           "Microsoft.Extensions.Configuration": "6.0.1"
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         },
         "runtime": {
           "Application.dll": {}
         }
       },
-<<<<<<< HEAD
-      "Domain/1.0.0": {
-=======
       "Microsoft.Extensions.Configuration/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
@@ -114,7 +107,6 @@
         "dependencies": {
           "System.IdentityModel.Tokens.Jwt": "7.6.2"
         },
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         "runtime": {
           "Domain.dll": {}
         }
@@ -127,8 +119,6 @@
       "serviceable": false,
       "sha512": ""
     },
-<<<<<<< HEAD
-=======
     "Microsoft.Extensions.Configuration/6.0.1": {
       "type": "package",
       "serviceable": true,
@@ -192,7 +182,6 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,

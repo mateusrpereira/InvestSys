@@ -7,10 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.31" />
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.31">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

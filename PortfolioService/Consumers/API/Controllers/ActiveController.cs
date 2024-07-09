@@ -2,6 +2,7 @@
 using Application.Active.Dtos;
 using Application.Active.Ports;
 using Application.Active.Requests;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -19,6 +20,7 @@ namespace API.Controllers
             _activeManager = activeManager;
         }
 
+        [Authorize("Bearer")]
         [HttpPost]
         public async Task<ActionResult<ActiveDto>> Post(ActiveDto active)
         {
@@ -40,6 +42,7 @@ namespace API.Controllers
             return BadRequest(500);
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult<ActiveDto>> Get(int activeId)
         {
@@ -50,6 +53,7 @@ namespace API.Controllers
             return NotFound(res);
         }
 
+        [Authorize("Bearer")]
         [HttpPut]
         public async Task<ActionResult<ActiveDto>> Put(ActiveDto active)
         {
@@ -69,6 +73,8 @@ namespace API.Controllers
             _logger.LogError("Response with unknown ErrorCode Returned", res);
             return BadRequest(500);
         }
+
+        [Authorize("Bearer")]
         [HttpDelete]
         public async Task<ActionResult<ActiveDto>> Delete(int activeId)
         {

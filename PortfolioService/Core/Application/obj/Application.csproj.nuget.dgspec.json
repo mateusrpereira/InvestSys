@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Application.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\obj\\",
-=======
-    "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\Application.csproj": {}
-  },
-  "projects": {
-    "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\Application.csproj",
-        "projectName": "Application",
-        "projectPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\obj\\",
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,13 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj"
-=======
-              "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj"
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
               }
             }
           }
@@ -67,15 +48,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-<<<<<<< HEAD
-=======
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
             }
           },
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
           "imports": [
             "net461",
             "net462",
@@ -96,7 +74,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -105,16 +82,6 @@
         "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\obj\\",
-=======
-    "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\obj\\",
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -147,15 +114,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-<<<<<<< HEAD
-=======
           "dependencies": {
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[7.6.2, )"
             }
           },
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
           "imports": [
             "net461",
             "net462",

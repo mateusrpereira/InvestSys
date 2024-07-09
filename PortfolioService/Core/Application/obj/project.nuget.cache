@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "49vRN44fmN4EgDtzdzlEe8HsaWYxF0iouJLXxMEeWrgmRZjp6s+pe76Xh3Ht642uyeUvJ1UTlGoMdsY/pSRDMA==",
+  "dgSpecHash": "JBV9/sTSGvmKAHT+efVek3ZHmWxaJE+zq7NFRDpJAocco9YlsmGDP62p02s0GPFlICByiyGvPg9YZ5qJq2EOhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
-=======
-  "dgSpecHash": "KeBps2hsiW6A5hQI2GfiSfSmTcyCp2OfiqdHcTcNyMP8x7HD43WhZ6VyPpJCa/jljdwJHv+LX8/rfmygVG4kFA==",
-  "success": true,
-  "projectFilePath": "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -20,6 +14,5 @@
     "C:\\Users\\mateu\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.2\\system.identitymodel.tokens.jwt.7.6.2.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
->>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
   "logs": []
 }
