@@ -10,6 +10,10 @@
         "dependencies": {
           "Application": "1.0.0",
           "Data": "1.0.0",
+<<<<<<< HEAD
+=======
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.31",
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
           "Microsoft.EntityFrameworkCore.Design": "6.0.31",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -25,13 +29,32 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.CSharp/4.5.0": {},
+=======
+      "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.31": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "6.0.31.0",
+            "fileVersion": "6.0.3124.26908"
+          }
+        }
+      },
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
       "Microsoft.Data.SqlClient/2.1.7": {
         "dependencies": {
           "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
           "Microsoft.Identity.Client": "4.21.1",
+<<<<<<< HEAD
           "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.8.0",
+=======
+          "Microsoft.IdentityModel.JsonWebTokens": "7.6.2",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0",
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
           "Microsoft.Win32.Registry": "4.7.0",
           "System.Configuration.ConfigurationManager": "4.7.0",
           "System.Diagnostics.DiagnosticSource": "6.0.1",
@@ -167,6 +190,21 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "Microsoft.Extensions.Configuration/6.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.322.12309"
+          }
+        }
+      },
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
@@ -214,6 +252,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.8.0"
@@ -267,6 +306,70 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
             "assemblyVersion": "6.8.0.0",
             "fileVersion": "6.8.0.11012"
+=======
+      "Microsoft.IdentityModel.Abstractions/7.6.2": {
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "assemblyVersion": "7.6.2.0",
+            "fileVersion": "7.6.2.50619"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/7.6.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "7.6.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "assemblyVersion": "7.6.2.0",
+            "fileVersion": "7.6.2.50619"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/7.6.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "7.6.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "7.6.2.0",
+            "fileVersion": "7.6.2.50619"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/6.35.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "7.6.2",
+          "Microsoft.IdentityModel.Tokens": "7.6.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Protocols.dll": {
+            "assemblyVersion": "6.35.0.0",
+            "fileVersion": "6.35.0.41201"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.35.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "6.35.0",
+          "System.IdentityModel.Tokens.Jwt": "7.6.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "6.35.0.0",
+            "fileVersion": "6.35.0.41201"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/7.6.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "7.6.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "7.6.2.0",
+            "fileVersion": "7.6.2.50619"
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
           }
         }
       },
@@ -396,6 +499,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.IdentityModel.Tokens.Jwt/6.8.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
@@ -405,6 +509,17 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
             "assemblyVersion": "6.8.0.0",
             "fileVersion": "6.8.0.11012"
+=======
+      "System.IdentityModel.Tokens.Jwt/7.6.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "7.6.2",
+          "Microsoft.IdentityModel.Tokens": "7.6.2"
+        },
+        "runtime": {
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "7.6.2.0",
+            "fileVersion": "7.6.2.50619"
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
           }
         }
       },
@@ -434,7 +549,10 @@
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Cng/4.5.0": {},
+=======
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
       "System.Security.Cryptography.ProtectedData/4.7.0": {
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -490,7 +608,12 @@
       },
       "Application/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Domain": "1.0.0"
+=======
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.Configuration": "6.0.1"
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         },
         "runtime": {
           "Application.dll": {}
@@ -506,6 +629,12 @@
         }
       },
       "Domain/1.0.0": {
+<<<<<<< HEAD
+=======
+        "dependencies": {
+          "System.IdentityModel.Tokens.Jwt": "7.6.2"
+        },
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         "runtime": {
           "Domain.dll": {}
         }
@@ -525,12 +654,21 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+=======
+    "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cNlwMJtNjVa5h7O+mAPJfOvcBZ7HYeLCqoGckR4uOG8bVhx0rryBbMFune0VDMNErRZAbHDnw/+J/vAbkyHBQ==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.31",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.6.0.31.nupkg.sha512"
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     },
     "Microsoft.Data.SqlClient/2.1.7": {
       "type": "package",
@@ -609,6 +747,16 @@
       "path": "microsoft.extensions.caching.memory/6.0.1",
       "hashPath": "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "Microsoft.Extensions.Configuration/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BUyFU9t+HzlSE7ri4B+AQN2BgTgHv/uM82s5ZkgU1BApyzWzIl48nDsG5wR1t0pniNuuyTBzG3qCW8152/NtSw==",
+      "path": "microsoft.extensions.configuration/6.0.1",
+      "hashPath": "microsoft.extensions.configuration.6.0.1.nupkg.sha512"
+    },
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -665,6 +813,7 @@
       "path": "microsoft.identity.client/4.21.1",
       "hashPath": "microsoft.identity.client.4.21.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
       "type": "package",
       "serviceable": true,
@@ -699,6 +848,49 @@
       "sha512": "sha512-gTqzsGcmD13HgtNePPcuVHZ/NXWmyV+InJgalW/FhWpII1D7V1k0obIseGlWMeA4G+tZfeGMfXr0klnWbMR/mQ==",
       "path": "microsoft.identitymodel.tokens/6.8.0",
       "hashPath": "microsoft.identitymodel.tokens.6.8.0.nupkg.sha512"
+=======
+    "Microsoft.IdentityModel.Abstractions/7.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ULeyJwfYTMHOAArrBZorjPyM/BL5PFfwRzDtxlOxawO9vB/wVmHmbzZnOyHCOLJjel7XiVNmVnAs3H0jh4/9jQ==",
+      "path": "microsoft.identitymodel.abstractions/7.6.2",
+      "hashPath": "microsoft.identitymodel.abstractions.7.6.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/7.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ySbY72MsWw7BnSZw0fCsmp/oMou8ntJkfuZUBcplV3ncXMzxcXCn3fK6Gg2YLnTT6F2G9JXl9zc2lwfVfGOWEA==",
+      "path": "microsoft.identitymodel.jsonwebtokens/7.6.2",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.7.6.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/7.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0brV311MYxGz7Numa+pbVsxbz5tfe2nbAig1b5tQb3h/L1y5lkoPyOgD0qAfI0iX1njbwr8l9NdxIT1cDbzWKA==",
+      "path": "microsoft.identitymodel.logging/7.6.2",
+      "hashPath": "microsoft.identitymodel.logging.7.6.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols/6.35.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BPQhlDzdFvv1PzaUxNSk+VEPwezlDEVADIKmyxubw7IiELK18uJ06RQ9QKKkds30XI+gDu9n8j24XQ8w7fjWcg==",
+      "path": "microsoft.identitymodel.protocols/6.35.0",
+      "hashPath": "microsoft.identitymodel.protocols.6.35.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.35.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LMtVqnECCCdSmyFoCOxIE5tXQqkOLrvGrL7OxHg41DIm1bpWtaCdGyVcTAfOQpJXvzND9zUKIN/lhngPkYR8vg==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/6.35.0",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/7.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pLnhCq9UNKWkn83zutkObYuzA+sOzx6VZpPI8hB8gD/vAXVt14D0SJ0sKPftwufvAbYGSNRda1vw/IFLbkjxNg==",
+      "path": "microsoft.identitymodel.tokens/7.6.2",
+      "hashPath": "microsoft.identitymodel.tokens.7.6.2.nupkg.sha512"
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
@@ -784,12 +976,21 @@
       "path": "system.drawing.common/4.7.0",
       "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.IdentityModel.Tokens.Jwt/6.8.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-5tBCjAub2Bhd5qmcd0WhR5s354e4oLYa//kOWrkX+6/7ZbDDJjMTfwLSOiZ/MMpWdE4DWPLOfTLOq/juj9CKzA==",
       "path": "system.identitymodel.tokens.jwt/6.8.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
+=======
+    "System.IdentityModel.Tokens.Jwt/7.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dyvPIzxohovbECESKj9ep7yShujU5oN9dKYR3ivvoTM7nLANNrBC5jN9ysZfY5Hp/Xs0R1b79IsdHuu6D4xwow==",
+      "path": "system.identitymodel.tokens.jwt/7.6.2",
+      "hashPath": "system.identitymodel.tokens.jwt.7.6.2.nupkg.sha512"
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",
@@ -812,6 +1013,7 @@
       "path": "system.security.accesscontrol/4.7.0",
       "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Cng/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -819,6 +1021,8 @@
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },
+=======
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
     "System.Security.Cryptography.ProtectedData/4.7.0": {
       "type": "package",
       "serviceable": true,

@@ -14,13 +14,58 @@ using Data.User;
 using Domain.Active.Ports;
 using Domain.Portfolio.Ports;
 using Domain.Ports;
+<<<<<<< HEAD
 using Domain.Transaction.Ports;
 using Microsoft.EntityFrameworkCore;
+=======
+using Domain.Security;
+using Domain.Transaction.Ports;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+<<<<<<< HEAD
+=======
+var signingConfigurations = new SigningConfigurations();
+builder.Services.AddSingleton(signingConfigurations);
+
+var tokenConfigurations = new TokenConfigurations();
+new ConfigureFromConfigurationOptions<TokenConfigurations>(
+    builder.Configuration.GetSection("TokenConfigurations"))
+    .Configure(tokenConfigurations);
+
+builder.Services.AddSingleton(tokenConfigurations);
+
+builder.Services.AddAuthentication(authOptions =>
+{
+    authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(bearerOptions =>
+{
+    var paramsValidation = bearerOptions.TokenValidationParameters;
+    paramsValidation.IssuerSigningKey = signingConfigurations.Key;
+    paramsValidation.ValidAudience = tokenConfigurations.Audience;
+    paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
+    paramsValidation.ValidateIssuerSigningKey = true;
+    paramsValidation.ValidateLifetime = true;
+    paramsValidation.ClockSkew = TimeSpan.Zero;
+});
+
+builder.Services.AddAuthorization(auth =>
+{
+    auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
+                   .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
+                   .RequireAuthenticatedUser().Build());
+});
+
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 builder.Services.AddControllers();
 
 # region IoC
@@ -47,7 +92,31 @@ builder.Services.AddDbContext<PortfolioDbContext>(
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+<<<<<<< HEAD
 builder.Services.AddSwaggerGen();
+=======
+builder.Services.AddSwaggerGen(c =>
+{
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "Entre com o Token JWT",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+        {
+            new OpenApiSecurityScheme {
+                Reference = new OpenApiReference {
+                    Id = "Bearer",
+                    Type = ReferenceType.SecurityScheme
+                }
+            }, new List<string>()
+        }
+    });
+});
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 
 var app = builder.Build();
 

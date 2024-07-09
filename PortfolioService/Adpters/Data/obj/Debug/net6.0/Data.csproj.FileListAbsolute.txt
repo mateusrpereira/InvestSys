@@ -16,3 +16,23 @@ C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.Up2Date
 C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+<<<<<<< HEAD
+=======
+D:\InvestSys-main\PortfolioService\Adpters\Data\bin\Debug\net6.0\Data.deps.json
+D:\InvestSys-main\PortfolioService\Adpters\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+D:\InvestSys-main\PortfolioService\Adpters\Data\bin\Debug\net6.0\Data.dll
+D:\InvestSys-main\PortfolioService\Adpters\Data\bin\Debug\net6.0\Data.pdb
+D:\InvestSys-main\PortfolioService\Adpters\Data\bin\Debug\net6.0\Domain.dll
+D:\InvestSys-main\PortfolioService\Adpters\Data\bin\Debug\net6.0\Domain.pdb
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.csproj.Up2Date
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.dll
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\refint\Data.dll
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.pdb
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+D:\InvestSys-main\PortfolioService\Adpters\Data\obj\Debug\net6.0\ref\Data.dll
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)

@@ -19,4 +19,11 @@
     <Folder Include="User\ValueObjects\" />
   </ItemGroup>
 
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.2" />
+  </ItemGroup>
+
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 </Project>

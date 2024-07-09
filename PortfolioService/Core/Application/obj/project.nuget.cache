@@ -1,8 +1,25 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "49vRN44fmN4EgDtzdzlEe8HsaWYxF0iouJLXxMEeWrgmRZjp6s+pe76Xh3Ht642uyeUvJ1UTlGoMdsY/pSRDMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Application.csproj",
   "expectedPackageFiles": [],
+=======
+  "dgSpecHash": "KeBps2hsiW6A5hQI2GfiSfSmTcyCp2OfiqdHcTcNyMP8x7HD43WhZ6VyPpJCa/jljdwJHv+LX8/rfmygVG4kFA==",
+  "success": true,
+  "projectFilePath": "D:\\InvestSys-main\\PortfolioService\\Core\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.2\\microsoft.identitymodel.abstractions.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.2\\microsoft.identitymodel.jsonwebtokens.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.2\\microsoft.identitymodel.logging.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.2\\microsoft.identitymodel.tokens.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.2\\system.identitymodel.tokens.jwt.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
   "logs": []
 }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Tests\\Application\\ApplicationTests\\obj\\",
+=======
+    "D:\\InvestSys-main\\PortfolioService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj": {}
+  },
+  "projects": {
+    "D:\\InvestSys-main\\PortfolioService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\InvestSys-main\\PortfolioService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj",
+        "projectName": "ApplicationTests",
+        "projectPath": "D:\\InvestSys-main\\PortfolioService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj",
+        "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
+        "outputPath": "D:\\InvestSys-main\\PortfolioService\\Tests\\Application\\ApplicationTests\\obj\\",
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",

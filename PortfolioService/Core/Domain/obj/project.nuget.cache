@@ -1,8 +1,21 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "b17Km0ogTOcoU0cc1Kb0HvrK9+TtozKFKnprL2HCJQoJoYMFBpHOiipHwtf8D0NK4kFvrGQoEhuF/mU6yfSpBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
+=======
+  "dgSpecHash": "Z6Fw5EqFduevTgiqIAE2eRweDXmM1Rj6Q6zCYVs7cKb4k/pSKkOtWH0RJT/8q/R9TOljxvilnygJccNQkvL7ug==",
+  "success": true,
+  "projectFilePath": "D:\\InvestSys-main\\PortfolioService\\Core\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.2\\microsoft.identitymodel.abstractions.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.2\\microsoft.identitymodel.jsonwebtokens.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.2\\microsoft.identitymodel.logging.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.2\\microsoft.identitymodel.tokens.7.6.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.2\\system.identitymodel.tokens.jwt.7.6.2.nupkg.sha512"
+  ],
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
   "logs": []
 }

@@ -1,5 +1,9 @@
 ﻿using Application.User.Dtos;
 using Application.User.Ports;
+<<<<<<< HEAD
+=======
+using Microsoft.AspNetCore.Authorization;
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -9,6 +13,10 @@ namespace API.Controllers
     [Route("[controller]")]
     public class LoginController : ControllerBase
     {
+<<<<<<< HEAD
+=======
+        [AllowAnonymous]
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
         [HttpPost]
         public async Task<object> Login([FromBody] LoginDto loginDto, [FromServices] ILoginManager service)
         {

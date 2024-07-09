@@ -9,11 +9,19 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = API
 build_property.RootNamespace = API
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumers\API\
+=======
+build_property.ProjectDir = D:\InvestSys-main\PortfolioService\Consumers\API\
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\mateu\source\repos\InvestSys\InsvestPortfolio\PortfolioService\Consumers\API
+=======
+build_property.MSBuildProjectDirectory = D:\InvestSys-main\PortfolioService\Consumers\API
+>>>>>>> 6c3766f (Implementação da autenticação - JWT Token)
 build_property._RazorSourceGeneratorDebug = 
