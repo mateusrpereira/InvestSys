@@ -3,6 +3,7 @@ using Application.User.Ports;
 using Application.User.Requests;
 using Application.User.Responses;
 using Domain.Ports;
+using Domain.User.Exceptions;
 
 namespace Application.User
 {
@@ -21,12 +22,31 @@ namespace Application.User
 
                 //request.Data.Id = await _userRepository.Create(user);
                 await user.Save(_userRepository);
+
                 request.Data.Id = user.Id;
 
                 return new UserResponse
                 {
                     Data = request.Data,
                     Success = true,
+                };
+            }
+            catch (MissingRequiredInformation e)
+            {
+                return new UserResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.MISSING_REQUIRED_INFORMATION,
+                    Message = "Missing required information passed"
+                };
+            }
+            catch (InvalidEmailException e)
+            {
+                return new UserResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.INVALID_EMAIL,
+                    Message = "The given email is not valid"
                 };
             }
             catch (Exception)
@@ -72,6 +92,24 @@ namespace Application.User
                 {
                     Data = request.Data,
                     Success = true,
+                };
+            }
+            catch (MissingRequiredInformation e)
+            {
+                return new UserResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.MISSING_REQUIRED_INFORMATION,
+                    Message = "Missing required information passed"
+                };
+            }
+            catch (InvalidEmailException e)
+            {
+                return new UserResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.INVALID_EMAIL,
+                    Message = "The given email is not valid"
                 };
             }
             catch (Exception)

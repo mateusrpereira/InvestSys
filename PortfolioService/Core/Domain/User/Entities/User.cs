@@ -1,4 +1,6 @@
 ﻿using Domain.Ports;
+using Domain.User;
+using Domain.User.Exceptions;
 
 namespace Domain.Entities
 {
@@ -9,11 +11,27 @@ namespace Domain.Entities
         public string Email { get; set; }
         public string Password { get; set; }
 
+        private void ValidateState()
+        {
+            if (string.IsNullOrEmpty(Name) || 
+                string.IsNullOrEmpty(Email) || 
+                string.IsNullOrEmpty(Password))
+            {
+                throw new MissingRequiredInformation();
+            }
+            if (Utils.ValidateEmail(this.Email) == false)
+            {
+                throw new InvalidEmailException();
+            }
+        }
+
         public async Task Save(IUserRepository userRepository)
         {
-            if (Id == 0)
+            this.ValidateState();
+
+            if (this.Id == 0)
             {
-                Id = await userRepository.Create(this);
+                this.Id = await userRepository.Create(this);
             }
             else
             {

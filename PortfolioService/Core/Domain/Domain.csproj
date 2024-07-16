@@ -14,7 +14,6 @@
     <Folder Include="Portfolio\ValueObjects\" />
     <Folder Include="Transaction\Exceptions\" />
     <Folder Include="Transaction\ValueObjects\" />
-    <Folder Include="User\Exceptions\" />
     <Folder Include="User\Enums\" />
     <Folder Include="User\ValueObjects\" />
   </ItemGroup>

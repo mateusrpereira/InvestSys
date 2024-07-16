@@ -1,13 +1,11 @@
-﻿using Domain.Entities;
-
-namespace Domain.Ports
+﻿namespace Domain.Ports
 {
     public interface IUserRepository
     {
-        Task<int> Create(User user);
-        Task<User> Get(int Id);
-        Task<int> Update(User user);
+        Task<int> Create(Domain.Entities.User user);
+        Task<Domain.Entities.User> Get(int Id);
+        Task<int> Update(Domain.Entities.User user);
         Task Delete(int Id);
-        Task<User> FindByLogin(string email);
+        Task<Domain.Entities.User> FindByLogin(string email);
     }
 }
