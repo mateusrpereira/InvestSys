@@ -2,6 +2,7 @@
 using Application.Active.Ports;
 using Application.Active.Requests;
 using Application.Active.Responses;
+using Domain.Active.Exceptions;
 using Domain.Active.Ports;
 
 namespace Application.Active
@@ -29,12 +30,39 @@ namespace Application.Active
                     Success = true,
                 };
             }
+            catch (MissingRequiredInformation e)
+            {
+                return new ActiveResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.ACTIVE_MISSING_REQUIRED_INFORMATION,
+                    Message = "Missing required information passed"
+                };
+            }
+            catch (InvalidActiveTypeException e)
+            {
+                return new ActiveResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.ACTIVE_INVALID_TYPE,
+                    Message = "The given active type is not valid"
+                };
+            }
+            catch (InvalidCodeException e)
+            {
+                return new ActiveResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.ACTIVE_INVALID_CODE,
+                    Message = "The given code is not valid"
+                };
+            }
             catch (Exception)
             {
                 return new ActiveResponse
                 { 
                     Success = false,
-                    ErrorCode = ErrorCodes.COULD_NOT_STORE_DATA,
+                    ErrorCode = ErrorCodes.ACTIVE_COULD_NOT_STORE_DATA,
                     Message = "There was an error when saving to DB"
                 };
             }

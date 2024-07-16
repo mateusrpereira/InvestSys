@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Active\Exceptions\" />
     <Folder Include="Active\ValueObjects\" />
     <Folder Include="Portfolio\Enums\" />
     <Folder Include="Portfolio\Exceptions\" />

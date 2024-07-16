@@ -32,7 +32,7 @@ namespace API.Controllers
 
             if (res.Success) return Created("", res.Data);
 
-            if (res.ErrorCode == ErrorCodes.NOT_FOUND)
+            if (res.ErrorCode == ErrorCodes.USER_NOT_FOUND)
             {
                 return BadRequest(res);
             }

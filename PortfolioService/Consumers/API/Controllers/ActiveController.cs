@@ -33,7 +33,23 @@ namespace API.Controllers
 
             if (res.Success) return Created("", res.Data);
 
-            if (res.ErrorCode == ErrorCodes.NOT_FOUND)
+            if (res.ErrorCode == ErrorCodes.ACTIVE_NOT_FOUND)
+            {
+                return BadRequest(res);
+            }
+            else if(res.ErrorCode == ErrorCodes.ACTIVE_MISSING_REQUIRED_INFORMATION)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.ACTIVE_INVALID_TYPE)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.ACTIVE_INVALID_CODE)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.ACTIVE_COULD_NOT_STORE_DATA)
             {
                 return BadRequest(res);
             }
