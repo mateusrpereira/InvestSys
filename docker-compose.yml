@@ -5,7 +5,6 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: mssql1
     user: root
-    #hostname: 'sqlserver'
     networks:
         database:
             aliases:
@@ -14,8 +13,6 @@ services:
       ACCEPT_EULA: "Y"
       SA_PASSWORD: "Hm#7K3!yX&1p"
       MSSQL_SA_PASSWORD: "Hm#7K3$yX&1p"
-    # volumes:
-    #   - mssql_data:/var/opt/mssql/data 
     ports:
       - "1434:1433"
 

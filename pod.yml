@@ -1,0 +1,12 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+    name: investsyspod
+    labels:
+        app: investsyspod
+spec:
+    containers:
+    - name: investsyspod
+      image: iderley/investsysapi:latest
+      ports:
+      - containerPort: 80
