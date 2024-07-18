@@ -1,4 +1,6 @@
-﻿using Domain.Portfolio.Ports;
+﻿using Domain.Portfolio.Exceptions;
+using Domain.Portfolio.Ports;
+using Domain.User;
 
 namespace Domain.Entities
 {
@@ -9,9 +11,25 @@ namespace Domain.Entities
         public string Name { get; set; }
         public string Description { get; set; }
 
+        private void ValidateState()
+        {
+            if (User == null)
+            {
+                throw new UserIsRequiredException();
+            }
+
+            if (string.IsNullOrEmpty(Name) ||
+                string.IsNullOrEmpty(Description))
+            {
+                throw new MissingRequiredInformation();
+            }
+        }
+
         public async Task Save(IPortfolioRepository portfolioRepository)
         {
-            if(Id == 0)
+            this.ValidateState();
+
+            if (Id == 0)
             {
                 Id = await portfolioRepository.Create(this);
             }

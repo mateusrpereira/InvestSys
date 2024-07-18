@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Active\ValueObjects\" />
     <Folder Include="Portfolio\Enums\" />
-    <Folder Include="Portfolio\Exceptions\" />
     <Folder Include="Portfolio\ValueObjects\" />
     <Folder Include="Transaction\Exceptions\" />
     <Folder Include="Transaction\ValueObjects\" />

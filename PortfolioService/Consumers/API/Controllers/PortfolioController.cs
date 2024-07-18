@@ -34,7 +34,11 @@ namespace API.Controllers
 
             if(res.Success) return Created("", res.Data);
 
-            if (res.ErrorCode == ErrorCodes.NOT_FOUND)
+            if (res.ErrorCode == ErrorCodes.PORTFOLIO_MISSING_REQUIRED_INFORMATION)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.PORTFOLIO_NOT_FOUND)
             {
                 return BadRequest(res);
             }

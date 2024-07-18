@@ -2,6 +2,7 @@
 using Application.Portfolio.Ports;
 using Application.Portfolio.Requests;
 using Application.Portfolio.Responses;
+using Domain.Portfolio.Exceptions;
 using Domain.Portfolio.Ports;
 using Domain.Ports;
 
@@ -37,12 +38,30 @@ namespace Application.Portfolio
                     Success = true,
                 };
             }
+            catch (MissingRequiredInformation)
+            {
+                return new PortfolioResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_MISSING_REQUIRED_INFORMATION,
+                    Message = "Missing required information passed"
+                };
+            }
+            catch (UserIsRequiredException)
+            {
+                return new PortfolioResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.PORTFOLIO_MISSING_REQUIRED_INFORMATION,
+                    Message = "The user id provided was not found"
+                };
+            }
             catch (Exception)
             {
                 return new PortfolioResponse
                 {
                     Success = false,
-                    ErrorCode = ErrorCodes.COULD_NOT_STORE_DATA,
+                    ErrorCode = ErrorCodes.PORTFOLIO_COULD_NOT_STORE_DATA,
                     Message = "There was an error when saving to DB"
                 };
             }
