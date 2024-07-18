@@ -47,7 +47,7 @@ namespace Application.Portfolio
                     Message = "Missing required information passed"
                 };
             }
-            catch (UserIsRequiredException)
+            catch (UserIsRequiredInformation)
             {
                 return new PortfolioResponse
                 {

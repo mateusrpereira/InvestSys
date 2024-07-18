@@ -15,7 +15,7 @@ namespace Domain.Entities
         {
             if (User == null)
             {
-                throw new UserIsRequiredException();
+                throw new UserIsRequiredInformation();
             }
 
             if (string.IsNullOrEmpty(Name) ||

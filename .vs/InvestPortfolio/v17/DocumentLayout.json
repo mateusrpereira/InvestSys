@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\transaction\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\transaction\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\application\\transaction\\transactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D8C76D-BDB9-4E37-B2C0-AFE0CA91B8C2}|PortfolioService\\Core\\Application\\Application.csproj|solutionrelative:portfolioservice\\core\\application\\transaction\\transactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\core\\domain\\transaction\\enums\\transactiontypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2677F23E-E1E2-4771-967A-A96284B917E2}|PortfolioService\\Core\\Domain\\Domain.csproj|solutionrelative:portfolioservice\\core\\domain\\transaction\\enums\\transactiontypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|c:\\users\\mateu\\source\\repos\\investsys\\insvestportfolio\\portfolioservice\\consumers\\api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C73F78CC-ED9F-4D96-906C-56824550EC42}|PortfolioService\\Consumers\\API\\API.csproj|solutionrelative:portfolioservice\\consumers\\api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionTypes.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Transaction\\Enums\\TransactionTypes.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\Transaction\\Enums\\TransactionTypes.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Transaction\\Enums\\TransactionTypes.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Domain\\Transaction\\Enums\\TransactionTypes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T01:51:05.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "PortfolioService\\Consumers\\API\\Controllers\\TransactionController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwCgAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T01:45:03.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionManager.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Transaction\\TransactionManager.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Application\\Transaction\\TransactionManager.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Application\\Transaction\\TransactionManager.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Application\\Transaction\\TransactionManager.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwE0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T01:30:37.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\InvestSys\\InsvestPortfolio\\PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
+              "RelativeToolTip": "PortfolioService\\Core\\Domain\\Transaction\\Entities\\Transaction.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T01:20:20.162Z",
+              "EditorCaption": ""
             }
           ]
         }

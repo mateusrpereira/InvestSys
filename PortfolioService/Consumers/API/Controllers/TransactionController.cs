@@ -34,7 +34,19 @@ namespace API.Controllers
 
             if (res.Success) return Created("", res.Data);
 
-            if (res.ErrorCode == ErrorCodes.NOT_FOUND)
+            else if (res.ErrorCode == ErrorCodes.TRANSACTION_MISSING_REQUIRED_INFORMATION)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.TRANSACTION_INVALID_TYPE)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.TRANSACTION_COULD_NOT_STORE_DATA)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == ErrorCodes.TRANSACTION_NOT_FOUND)
             {
                 return BadRequest(res);
             }

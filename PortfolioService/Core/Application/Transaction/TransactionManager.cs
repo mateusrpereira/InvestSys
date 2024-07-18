@@ -4,6 +4,7 @@ using Application.Transaction.Requests;
 using Application.Transaction.Responses;
 using Domain.Active.Ports;
 using Domain.Portfolio.Ports;
+using Domain.Transaction.Exceptions;
 using Domain.Transaction.Ports;
 
 namespace Application.Transaction
@@ -42,12 +43,48 @@ namespace Application.Transaction
                     Success = true,
                 };
             }
+            catch (PortfolioIsRequiredInformation)
+            {
+                return new TransactionResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.TRANSACTION_MISSING_REQUIRED_INFORMATION,
+                    Message = "The portfolio id provided was not found"
+                };
+            }
+            catch (ActiveIsRequiredInformation)
+            {
+                return new TransactionResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.TRANSACTION_MISSING_REQUIRED_INFORMATION,
+                    Message = "The active id provided was not found"
+                };
+            }
+            catch (InvalidTransactionTypeException)
+            {
+                return new TransactionResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.TRANSACTION_INVALID_TYPE,
+                    Message = "The given transaction type is not valid"
+                };
+            }
+            catch (MissingRequiredInformation)
+            {
+                return new TransactionResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCodes.TRANSACTION_MISSING_REQUIRED_INFORMATION,
+                    Message = "Missing required information passed"
+                };
+            }
             catch (Exception)
             {
                 return new TransactionResponse
                 {
                     Success = false,
-                    ErrorCode = ErrorCodes.COULD_NOT_STORE_DATA,
+                    ErrorCode = ErrorCodes.TRANSACTION_COULD_NOT_STORE_DATA,
                     Message = "There was an error when saving to DB"
                 };
             }
