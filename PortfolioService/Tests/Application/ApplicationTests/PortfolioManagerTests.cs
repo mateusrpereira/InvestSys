@@ -61,7 +61,7 @@ namespace ApplicationTests
 
             fakeRepo.Setup(x => x.Create(It.IsAny<Portfolio>())).Returns(Task.FromResult(expectedId));
 
-            portfolioManager = new PortfolioManager(fakeRepo.Object, userRepository.Object);//??
+            portfolioManager = new PortfolioManager(fakeRepo.Object, userRepository.Object);
 
             var res = await portfolioManager.CreatePortfolio(request);
 
