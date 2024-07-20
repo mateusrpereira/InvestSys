@@ -30,10 +30,10 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./InvestPortfolio.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./InvestPortfolio.sln --no-restore
     - name: Test
       env:
         TESTING: Y
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./InvestPortfolio.sln --no-build --verbosity normal
