@@ -77,7 +77,9 @@ builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 #endregion
 
 #region DB wiring up
-var connectionStringName = builder.Environment.IsDevelopment() ? "DevConnectionString" : "ProdConnectionString";
+var connectionStringName =
+    !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TESTING")) ? "TestConnectionString" :
+        builder.Environment.IsDevelopment() ? "DevConnectionString" : "ProdConnectionString";
 var connectionString = builder.Configuration.GetConnectionString(connectionStringName);
 builder.Services.AddDbContext<PortfolioDbContext>(
     options => options.UseSqlServer(connectionString));
