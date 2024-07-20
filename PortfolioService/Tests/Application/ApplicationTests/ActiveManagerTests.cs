@@ -26,7 +26,7 @@ namespace ApplicationTests
             {
                 Name = "Test",
                 ActiveType = ActiveTypes.Bonds,
-                Code = 1
+                Code = "ABCD3"
             };
 
             int expectedId = 333;
@@ -53,9 +53,9 @@ namespace ApplicationTests
             Assert.AreEqual(res.Data.Code, activeDto.Code);
         }
 
-        [TestCase(5, "", 1)]
-        [TestCase(5, null, 1)]
-        public async Task Should_Return_MissingRequiredInformation(ActiveTypes ActiveType, string Name, int Code)
+        [TestCase(5, "", "ABCD3")]
+        [TestCase(5, null, "ABCD3")]
+        public async Task Should_Return_MissingRequiredInformation(ActiveTypes ActiveType, string Name, string Code)
         {
             var activeDto = new ActiveDto
             {
@@ -83,8 +83,8 @@ namespace ApplicationTests
             Assert.AreEqual(res.Message, "Missing required information passed");
         }
 
-        [TestCase(15, "NameTest", 1)]//ActiveType Invalid
-        public async Task Should_Return_InvalidActiveTypeException(ActiveTypes ActiveType, string Name, int Code)
+        [TestCase(15, "NameTest", "ABCD3")]//ActiveType Invalid
+        public async Task Should_Return_InvalidActiveTypeException(ActiveTypes ActiveType, string Name, string Code)
         {
             var activeDto = new ActiveDto
             {
@@ -112,8 +112,8 @@ namespace ApplicationTests
             Assert.AreEqual(res.Message, "The given active type is not valid");
         }
 
-        [TestCase(5, "NameTest", -1)]
-        public async Task Should_Return_InvalidCodeException(ActiveTypes ActiveType, string Name, int Code)
+        [TestCase(5, "NameTest", "")]
+        public async Task Should_Return_InvalidCodeException(ActiveTypes ActiveType, string Name, string Code)
         {
             var activeDto = new ActiveDto
             {

@@ -77,7 +77,8 @@ builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 #endregion
 
 #region DB wiring up
-var connectionString = builder.Configuration.GetConnectionString("Main");
+var connectionStringName = builder.Environment.IsDevelopment() ? "DevConnectionString" : "ProdConnectionString";
+var connectionString = builder.Configuration.GetConnectionString(connectionStringName);
 builder.Services.AddDbContext<PortfolioDbContext>(
     options => options.UseSqlServer(connectionString));
 #endregion
@@ -109,13 +110,13 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

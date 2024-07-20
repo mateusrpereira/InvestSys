@@ -10,7 +10,7 @@ namespace Domain.Entities
         public int Id { get; set; }
         public ActiveTypes ActiveType { get; set; }
         public string Name { get; set; }
-        public int Code { get; set; }
+        public string Code { get; set; }
 
         private void ValidateState()
         {
@@ -24,7 +24,7 @@ namespace Domain.Entities
                 throw new InvalidActiveTypeException();
             }
 
-            if (Code <= 0)//B.O no merge...
+            if (string.IsNullOrEmpty(Code))
             {
                 throw new InvalidCodeException();
             }
