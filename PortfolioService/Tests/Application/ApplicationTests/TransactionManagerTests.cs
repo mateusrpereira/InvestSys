@@ -51,7 +51,7 @@ namespace ApplicationTests
             var activeDto = new ActiveDto
             {
                 Name = "Active Name Test",
-                Code = 1,
+                Code = "ABCD3",
                 ActiveType = ActiveTypes.Commodities
             };
             var activeId = 1;
@@ -126,7 +126,7 @@ namespace ApplicationTests
                 Id = activeId,
                 Name = "Test Active",
                 ActiveType = ActiveTypes.Bonds,
-                Code = 1
+                Code = "ABCD3"
             };
 
             portfolioRepository.Setup(x => x.Get(portfolioId)).ReturnsAsync(portfolio);
@@ -188,7 +188,7 @@ namespace ApplicationTests
             var activeDto = new ActiveDto
             {
                 Name = "Active Name Test",
-                Code = 1,
+                Code = "ABCD3",
                 ActiveType = ActiveTypes.Commodities
             };
             var activeId = 1;
@@ -241,7 +241,7 @@ namespace ApplicationTests
             var activeDto = new ActiveDto
             {
                 Name = "Active Name Test",
-                Code = 1,
+                Code = "ABCD3",
                 ActiveType = ActiveTypes.Commodities
             };
             var activeId = 1;

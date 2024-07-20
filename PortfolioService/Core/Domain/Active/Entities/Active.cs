@@ -24,7 +24,7 @@ namespace Domain.Entities
                 throw new InvalidActiveTypeException();
             }
 
-            if (Code <= 0)//B.O no merge...
+            if (string.IsNullOrEmpty(Code))
             {
                 throw new InvalidCodeException();
             }
