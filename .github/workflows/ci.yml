@@ -5,9 +5,9 @@ name: .NET
 
 on:
   push:
-    branches: [ "ci_githubactions" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "ci_githubactions" ]
+    branches: [ "main" ]
 
 jobs:
   container-job:
