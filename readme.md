@@ -1,8 +1,3 @@
----
-title: InvestSys
-
----
-
 # Sistema para Gestão de Investimentos - InvestSys
 
 É uma aplicação .NET que simula um Sistema de Gestão de Investimentos, permitindo que os usuários gerenciem seus Portfólios de Investimentos, realizando Transações de compra e venda de Ações de Ativos (ações, títulos, criptomoedas etc.). A solução foi desenvolvida utilizando a linguagem de programação C# na versão 6.0 do .NET e banco de dados SQL Server com publicação dentro de um cluster Kubernets e testes sendo executados via pipeline no GitHub Actions.
